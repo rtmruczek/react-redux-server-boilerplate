@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 const WebpackDevServer = require('webpack-dev-server');
 const webPackConfig = require('./webpack.config.js');
+
 const compiler = webpack(webPackConfig);
 const webServerConfig = {
   publicPath: webPackConfig.output.publicPath,

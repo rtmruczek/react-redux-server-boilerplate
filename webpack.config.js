@@ -1,9 +1,12 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { join } = require('path');
+const webpack = require('webpack');
 
 module.exports = {
   context: join(__dirname, '/src'),
   entry: [
+    'webpack-dev-server/client?http://localhost:3000', // WebpackDevServer host and port
+    'webpack/hot/only-dev-server', // "only" prevents reload on syntax errors
     './index.js',
   ],
 
@@ -17,6 +20,7 @@ module.exports = {
       inject: 'body',
       filename: 'index.html',
     }),
+    new webpack.HotModuleReplacementPlugin(),
   ],
   devtool: 'inline-source-map',
   module: {
@@ -26,7 +30,7 @@ module.exports = {
     loaders: [{
       test: /\.js?$/,
       exclude: /node_modules/,
-      loader: 'babel',
+      loaders: ['react-hot', 'babel'],
     },
     {
       test: /\.css?$/,
