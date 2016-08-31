@@ -17,6 +17,7 @@ module.exports = {
       filename: 'index.html'
     })
   ],
+  devtool: 'inline-source-map',
   module: {
     loaders: [{
         test: /\.js?$/,
@@ -36,5 +37,13 @@ module.exports = {
         loader : 'url-loader?limit=8192'
       }
     ],
+  },
+
+  /** NEEDED FOR ENZYME **/
+  externals: {
+  'react/addons': true,
+  'react/lib/ExecutionEnvironment': true,
+  'react/lib/ReactContext': true
   }
+  /** NEEDED FOR ENZYME **/
 }

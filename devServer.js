@@ -6,6 +6,7 @@ var webServerConfig = {
   publicPath: webPackConfig.output.publicPath,
   hot: true,
   historyApiFallback: true,
+  quiet: true,
   stats: {
     colors: true,
     hash: false,
