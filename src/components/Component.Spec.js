@@ -1,9 +1,8 @@
-describe('a component', () => {
 
+describe('a component', () => {
+  console.log(this);
 
   it('should do something', () => {
-
-    expect(true).to.be.true;  
-
-  })
-})
+    expect(true).to.be.true;
+  });
+});

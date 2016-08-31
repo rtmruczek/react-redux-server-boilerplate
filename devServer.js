@@ -1,8 +1,8 @@
-var webpack = require('webpack')
-var WebpackDevServer = require('webpack-dev-server')
-var webPackConfig = require('./webpack.config.js')
-var compiler = webpack(webPackConfig)
-var webServerConfig = {
+const webpack = require('webpack');
+const WebpackDevServer = require('webpack-dev-server');
+const webPackConfig = require('./webpack.config.js');
+const compiler = webpack(webPackConfig);
+const webServerConfig = {
   publicPath: webPackConfig.output.publicPath,
   hot: true,
   historyApiFallback: true,
@@ -13,11 +13,11 @@ var webServerConfig = {
     timings: true,
     chunks: false,
     chunkModules: false,
-    modules: false
-  }
-}
+    modules: false,
+  },
+};
 
-var server = new WebpackDevServer(compiler, webServerConfig)
+const server = new WebpackDevServer(compiler, webServerConfig);
 
-server.listen(3000)
-console.info('==> 🌎 Listening on port %s', 3000)
+server.listen(3000);
+console.info('==> 🌎 Listening on port %s', 3000);
