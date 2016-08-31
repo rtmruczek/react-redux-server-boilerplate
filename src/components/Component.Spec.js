@@ -1,8 +1,11 @@
+import React from 'react';
+import { shallow } from 'enzyme';
+import Component from './Component';
 
 describe('a component', () => {
-  console.log(this);
+  const wrapper = shallow(<Component />);
 
   it('should do something', () => {
-    expect(true).to.be.true;
+    expect(wrapper.find(Component)).to.have.length(1);
   });
 });

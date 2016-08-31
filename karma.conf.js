@@ -1,11 +1,10 @@
 // Karma configuration
 // Generated on Wed Aug 31 2016 10:35:49 GMT-0400 (Eastern Daylight Time)
 
-var webpack = require('./webpack.config')
+const webpack = require('./webpack.config');
 
-module.exports = function(config) {
+module.exports = function (config) {
   config.set({
-
 
 
     // base path that will be used to resolve all patterns (eg. files, exclude)
@@ -19,7 +18,7 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'src/**/*Spec.js'
+      'src/**/*Spec.js',
     ],
 
 
@@ -33,10 +32,10 @@ module.exports = function(config) {
     preprocessors: {
       // add webpack as preprocessor
       'src/**/*.js': ['webpack', 'sourcemap'],
-      'test/**/*.js': ['webpack', 'sourcemap']
+      'test/**/*.js': ['webpack', 'sourcemap'],
     },
 
-    webpack: webpack,
+    webpack,
 
 
     // test results reporter to use
@@ -73,6 +72,6 @@ module.exports = function(config) {
 
     // Concurrency level
     // how many browser should be started simultaneous
-    concurrency: Infinity
-  })
-}
+    concurrency: Infinity,
+  });
+};
