@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import 'semantic-ui-css/semantic.css'
 
 export default class Main extends React.Component {
 
