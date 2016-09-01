@@ -4,7 +4,8 @@
   "rules": {
     "strict": 0,
     "no-global-assign": 0,
-    "no-unsafe-negation": 0
+    "no-unsafe-negation": 0,
+    "react/jsx-uses-vars": [2],
   },
   "env": {
     "browser": true,

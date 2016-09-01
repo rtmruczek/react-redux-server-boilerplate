@@ -1,5 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { join } = require('path');
+const join = require('path').join;
 const webpack = require('webpack');
 
 module.exports = {
