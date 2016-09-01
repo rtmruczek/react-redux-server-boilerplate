@@ -12,10 +12,10 @@ class Navigation extends React.Component {
           <i className="home icon"></i>
           Home
         </Link>
-        <a className="item" to="/characters">
+        <Link className="item" to="/characters">
           <i className="users icon"></i>
           Characters
-        </a>
+        </Link>
         <a className="item">
           <i className="book icon"></i>
           Campaigns

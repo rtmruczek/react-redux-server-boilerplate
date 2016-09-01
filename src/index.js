@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import 'semantic-ui-css/components/site.css';
 import { Route, IndexRoute, Router, hashHistory } from 'react-router';
+import 'semantic-ui-css/components/site.css';
 
-import Container from './containers/Container';
+import Container from './containers/Container/Container';
 import Home from './views/Home';
+import Characters from './views/Characters';
 
 export default class Main extends React.Component {
   render() {
@@ -12,6 +13,7 @@ export default class Main extends React.Component {
       <Router history={hashHistory}>
         <Route path="/" component={Container}>
           <IndexRoute component={Home} />
+          <Route path="characters" component={Characters}/>
         </Route>
       </Router>
     );
