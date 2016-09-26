@@ -1,12 +1,21 @@
 {
+<<<<<<< HEAD
   "name": "burgundy",
+=======
+  "name": "react-redux-server",
+>>>>>>> d2965c6cb4c8c8aeb85958d8f370bc15a3769ef6
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+<<<<<<< HEAD
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node devServer.js"
 
+=======
+    "test": "karma start karma.conf.js",
+    "start": "node devServer.js"
+>>>>>>> d2965c6cb4c8c8aeb85958d8f370bc15a3769ef6
   },
   "author": "",
   "license": "ISC",
@@ -29,6 +38,7 @@
     "eslint-plugin-react": "^6.2.0",
     "file-loader": "^0.9.0",
     "html-webpack-plugin": "^2.22.0",
+<<<<<<< HEAD
     "isparta-loader": "^2.0.0",
     "json-loader": "^0.5.4",
     "karma": "^1.2.0",
@@ -36,6 +46,12 @@
     "karma-chai-plugins": "^0.7.0",
     "karma-chrome-launcher": "^2.0.0",
     "karma-coverage": "^1.1.1",
+=======
+    "json-loader": "^0.5.4",
+    "karma": "^1.2.0",
+    "karma-chai-plugins": "^0.7.0",
+    "karma-chrome-launcher": "^2.0.0",
+>>>>>>> d2965c6cb4c8c8aeb85958d8f370bc15a3769ef6
     "karma-mocha": "^1.1.1",
     "karma-mocha-reporter": "^2.1.0",
     "karma-phantomjs-launcher": "^1.0.2",
@@ -45,7 +61,10 @@
     "node-sass": "^3.8.0",
     "react-addons-test-utils": "^15.3.1",
     "react-hot-loader": "^1.3.0",
+<<<<<<< HEAD
     "redux-mock-store": "^1.2.0",
+=======
+>>>>>>> d2965c6cb4c8c8aeb85958d8f370bc15a3769ef6
     "sass-loader": "^4.0.1",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
@@ -53,6 +72,7 @@
     "webpack-dev-server": "^1.15.0"
   },
   "dependencies": {
+<<<<<<< HEAD
     "firebase": "^3.3.2",
     "lodash": "^4.15.0",
     "react": "^15.3.1",
@@ -60,10 +80,21 @@
     "react-dnd-html5-backend": "^2.1.2",
     "react-dom": "^15.3.1",
     "react-redux": "^4.4.5",
+=======
+    "express": "^4.14.0",
+    "isomorphic-fetch": "^2.2.1",
+    "json-server": "^0.8.19",
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1",
+>>>>>>> d2965c6cb4c8c8aeb85958d8f370bc15a3769ef6
     "react-router": "^2.7.0",
     "redux": "^3.5.2",
     "redux-logger": "^2.6.1",
     "redux-thunk": "^2.1.0",
+<<<<<<< HEAD
+=======
+    "semantic-ui-css": "^2.2.4",
+>>>>>>> d2965c6cb4c8c8aeb85958d8f370bc15a3769ef6
     "stardust": "^0.38.1"
   }
 }
