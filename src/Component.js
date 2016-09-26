@@ -2,10 +2,11 @@ import React from 'react';
 
 export default class Component extends React.Component {
   render() {
-    return (<div>
-
-        MyC
-    </div>);
+    return (
+      <div>
+        MyComponent
+      </div>
+    );
   }
 }
 

@@ -11,11 +11,7 @@ module.exports = {
   ],
 
   output: {
-<<<<<<< HEAD
     filename: './index.[hash].js',
-=======
-    filename: './index.js',
->>>>>>> d2965c6cb4c8c8aeb85958d8f370bc15a3769ef6
     path: join(__dirname, '/dist'),
   },
   plugins: [
@@ -55,19 +51,7 @@ module.exports = {
     {
       test: /\.json?$/,
       loader: 'json',
-<<<<<<< HEAD
     }],
-=======
-    },
-    ],
->>>>>>> d2965c6cb4c8c8aeb85958d8f370bc15a3769ef6
   },
 
-  /** NEEDED FOR ENZYME **/
-  externals: {
-    'react/addons': true,
-    'react/lib/ExecutionEnvironment': true,
-    'react/lib/ReactContext': true,
-  },
-  /** NEEDED FOR ENZYME **/
 };
