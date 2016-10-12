@@ -13,7 +13,7 @@ module.exports = function (config) {
       'webpack.test.js',
     ],
 
-    plugins: ['karma-chrome-launcher', 'karma-chai', 'karma-mocha',
+    plugins: ['karma-phantomjs-launcher', 'karma-chai', 'karma-mocha',
         'karma-sourcemap-loader', 'karma-webpack', 'karma-coverage',
         'karma-mocha-reporter', 'karma-spec-reporter',
       ],
@@ -63,7 +63,7 @@ module.exports = function (config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['Chrome'],
+    browsers: ['PhantomJS'],
 
 
     // Continuous Integration mode
