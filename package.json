@@ -7,6 +7,16 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node devServer.js"
   },
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-0",
+      "react"
+    ],
+    "plugins": [
+      "react-hot-loader/babel"
+    ]
+  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
@@ -41,6 +51,7 @@
     "node-sass": "^3.8.0",
     "react-addons-test-utils": "^15.3.1",
     "react-hot-loader": "^1.3.0",
+    "react-hot-loader": "^3.0.0-beta.5",
     "sass-loader": "^4.0.1",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
