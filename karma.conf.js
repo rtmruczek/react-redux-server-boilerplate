@@ -10,12 +10,12 @@ module.exports = function (config) {
     frameworks: ['mocha', 'chai'],
 
     files: [
-      'webpack.test.js',
+      './test/index.js',
     ],
 
     plugins: ['karma-phantomjs-launcher', 'karma-chai', 'karma-mocha',
         'karma-sourcemap-loader', 'karma-webpack', 'karma-coverage',
-        'karma-mocha-reporter', 'karma-spec-reporter',
+        'karma-spec-reporter',
       ],
     // list of files to exclude
     exclude: ['/node_modules/', '/*.test.js/'],
@@ -26,7 +26,7 @@ module.exports = function (config) {
     preprocessors: {
       // add webpack as preprocessor
       'src/**/*.js': ['webpack', 'sourcemap'],
-      'webpack.test.js': ['webpack', 'sourcemap'],
+      './test/index.js': ['webpack', 'sourcemap'],
     },
 
     webpack,
@@ -34,9 +34,6 @@ module.exports = function (config) {
       noInfo: true, // please don't spam the console when running in karma!
     },
 
-    // test results reporter to use
-    // possible values: 'dots', 'progress'
-    // available reporters: https://npmjs.org/browse/keyword/karma-reporter
     reporters: ['spec', 'coverage'],
     coverageReporter: {
       type: 'html', // produces a html document after code is run

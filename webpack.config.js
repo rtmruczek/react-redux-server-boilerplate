@@ -9,7 +9,7 @@ module.exports = {
     'webpack/hot/only-dev-server', // "only" prevents reload on syntax errors
     './index.js',
   ],
-  stats: 'errors-only',
+  stats: { quiet: true, chunks: false },
   output: {
     filename: './index.[hash].js',
     path: join(__dirname, '/dist'),
