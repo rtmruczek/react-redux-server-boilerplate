@@ -6,6 +6,8 @@
     "no-global-assign": 0,
     "no-unsafe-negation": 0,
     "react/jsx-uses-vars": [2],
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": ["**/*.test.js", "**/*.spec.js", "./devServer.js"]}],
+    "class-methods-use-this": ["error", { "exceptMethods": ["render"] }],
     "no-unused-vars": ["error", { "varsIgnorePattern": "React" }],
     "no-underscore-dangle": 0,
     "linebreak-style": 0,
