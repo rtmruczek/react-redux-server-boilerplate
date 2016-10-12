@@ -21,6 +21,14 @@ module.exports = {
       filename: 'index.html',
     }),
     new webpack.HotModuleReplacementPlugin(),
+    new webpack.DllReferencePlugin({
+      context: './dist',
+      manifest: require(join(__dirname, './dist/react-manifest.json')),
+    }),
+    new webpack.DllReferencePlugin({
+      context: './dist',
+      manifest: require(join(__dirname, './dist/redux-manifest.json')),
+    }),
   ],
   devtool: 'inline-source-map',
   module: {
