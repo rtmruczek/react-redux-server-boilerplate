@@ -9,7 +9,7 @@ module.exports = {
     'webpack/hot/only-dev-server', // "only" prevents reload on syntax errors
     './index.js',
   ],
-
+  stats: 'errors-only',
   output: {
     filename: './index.[hash].js',
     path: join(__dirname, '/dist'),
@@ -54,4 +54,11 @@ module.exports = {
     }],
   },
 
+  /** NEEDED FOR ENZYME **/
+  externals: {
+    'react/addons': true,
+    'react/lib/ExecutionEnvironment': true,
+    'react/lib/ReactContext': true,
+  },
+  /** NEEDED FOR ENZYME **/
 };
