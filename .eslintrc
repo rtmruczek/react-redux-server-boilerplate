@@ -22,5 +22,6 @@
     "react"
   ],
   "globals": {
+    "expect": true
   }
 }
